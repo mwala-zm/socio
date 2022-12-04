@@ -27,3 +27,5 @@ module Socio
 end
 
 require "sprockets/railtie"
+
+require 'faker'

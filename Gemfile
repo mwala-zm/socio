@@ -58,3 +58,8 @@ gem "devise", "~> 4.8"
 gem 'graphql-rails-generators', group: :development
 
 gem 'mobility', '~> 1.2.9'
+gem "faker", "~> 3.0"
+
+group :development do
+  gem 'annotate'
+end
