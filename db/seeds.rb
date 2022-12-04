@@ -11,6 +11,8 @@
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     user_name: Faker::Internet.username(specifier: 20, separators: ['-']),
-    age: Faker::Date.birthday(min_age: 13, max_age: 65)
+    age: Faker::Date.birthday(min_age: 13, max_age: 65),
+    address: Faker::Address.full_address #=> "5479 William Way, East Sonnyhaven, LA 63637"
+    music: Faker::Music::Hiphop.artist
   )
 end

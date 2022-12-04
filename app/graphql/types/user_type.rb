@@ -9,6 +9,13 @@ module Types
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
     field :user_name, String
+    field :address, String
     field :age, Integer
+
+    field :music, [Types::MusicType], null: true
+
+    def music_size
+      object.music.size
+    end
   end
 end
