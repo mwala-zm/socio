@@ -63,3 +63,5 @@ gem "faker", "~> 3.0"
 group :development do
   gem 'annotate'
 end
+gem "rails_admin", "~> 3.1"
+gem "sassc-rails"
